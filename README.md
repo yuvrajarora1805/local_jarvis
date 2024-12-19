@@ -18,8 +18,8 @@ Welcome to the **Jarvis AI Assistant** project! This innovative voice-activated 
 
 ### 1. **Clone the Repository**:
 ```bash
-git clone https://github.com/yourusername/jarvis-assistant.git
-cd jarvis-assistant
+git clone https://github.com/yuvrajarora1805/local_jarvis.git
+cd local_jarvis
 ```
 
 ### 2. **Install Dependencies**:
