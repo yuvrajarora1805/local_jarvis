@@ -33,7 +33,7 @@ Download the **Vosk model** from [Vosk Models](https://alphacephei.com/vosk/mode
 
 ### 4. **Run the Assistant**:
 ```bash
-python jarvis_assistant.py
+python local_jarvis.py
 ```
 
 ---
