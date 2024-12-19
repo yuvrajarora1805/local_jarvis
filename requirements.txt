@@ -1,0 +1,4 @@
+vosk
+pyaudio
+requests
+pyttsx3
