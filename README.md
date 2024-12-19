@@ -1,89 +1,62 @@
-🤖 Jarvis - Your Personal Voice Assistant 🤖
-Welcome to Jarvis, a voice-activated assistant that listens to your commands, generates intelligent responses using AI, and speaks back to you. Built using the Vosk speech recognition model, Ollama for AI-powered responses, and pyttsx3 for text-to-speech functionality, Jarvis is here to help you with anything you need—just say "Jarvis" to wake him up!
+🚀 Jarvis AI Assistant
+AI Assistant
 
-🚀 Features 🚀
-🗣 Speech Recognition: Powered by Vosk, it listens to your voice commands and understands your speech.
-🤖 AI Responses: Uses Ollama API to generate intelligent and creative responses to your questions.
-🔊 Text-to-Speech: Converts AI-generated responses into speech using pyttsx3, making the assistant interactive.
-🕹 Wake-Up Command: Say "Jarvis" to activate the assistant and start a conversation.
-💬 Real-Time Interaction: Talks back and responds to your questions or commands with a human-like voice.
-🛠 Installation 🛠
-Prerequisites
-Before running Jarvis, ensure that you have the following installed:
+Welcome to the Jarvis AI Assistant project! This innovative voice-activated assistant leverages cutting-edge technologies like Vosk for speech recognition, PyAudio for audio processing, and Ollama for generating intelligent responses. With a natural-sounding voice provided by pyttsx3, Jarvis is designed to make your interactions seamless and engaging.
 
-Python 3.6+: Make sure you have Python 3.6 or higher installed.
-Vosk Model: Download the Vosk small English model (e.g., vosk-model-small-en-us-0.15).
-Ollama API: Set up and run the Ollama API locally. Download from Ollama.
-Required Python Libraries: Install the necessary libraries by running:
+🌟 Features
+Voice Recognition: Accurately captures and processes spoken commands using Vosk.
+Real-Time Responses: Generates intelligent replies using Ollama's powerful language model.
+Natural Voice Output: Speaks responses with pyttsx3, offering customizable voice options.
+User-Friendly Interface: Simple setup and easy-to-use command structure.
+🛠️ Installation
+Clone the Repository:
+
 bash
-Copy code
+
+
+git clone https://github.com/yourusername/jarvis-assistant.git
+cd jarvis-assistant
+Install Dependencies: Ensure you have Python installed, then run:
+
+bash
+
+
 pip install vosk pyaudio requests pyttsx3
-Setup Instructions
-Download Vosk Model:
-Go to Vosk Models and download the vosk-model-small-en-us-0.15 model.
-Extract the model and note the path where it's saved.
-Update the vosk_model_path variable in the script with the path to your downloaded model.
-python
-Copy code
-vosk_model_path = "C:\\path\\to\\vosk-model-small-en-us-0.15"
-Set Up Ollama API:
+Download Vosk Model: Download the Vosk model from Vosk Models and update the vosk_model_path in the script.
 
-Download and set up Ollama on your local machine.
-Make sure the Ollama API is running at http://localhost:11434.
-Update Script for Voice:
+Run the Assistant:
 
-pyttsx3 lets you choose a voice. To change the voice, simply update this line in the script:
-python
-Copy code
-tts_engine.setProperty('voice', voices[1].id)  # Select the desired voice index
-🚀 How to Run 🚀
-Ensure your environment is set up with the necessary Python libraries and dependencies.
-Run the script:
 bash
-Copy code
-python voice_assistant.py
-Wake up Jarvis:
-Say "Jarvis" to wake up the assistant. Then, ask questions like:
 
-"What's the weather like today?"
-"Tell me a joke."
-"What is the capital of France?"
-Jarvis will respond with an AI-generated answer, speaking it aloud through the speakers.
 
-💡 How It Works 💡
-Speech Recognition:
-The assistant listens to your voice through the microphone using Vosk. It waits for the keyword "Jarvis" to activate.
-AI Response Generation:
-Once activated, the assistant listens for your input and sends it to the Ollama API. Ollama processes the input and generates a response.
-Text-to-Speech:
-pyttsx3 converts the response into speech and plays it aloud, so you can hear the answer.
-📝 Example Commands 📝
-Say: "Jarvis, what's the time?"
+python jarvis_assistant.py
+📝 Usage
+Wake Up Jarvis:
 
-Jarvis responds: "The time is 3:45 PM."
+Speak "Jarvis" to activate the assistant.
+Give Commands:
 
-Say: "Jarvis, tell me a joke!"
+Once activated, speak your commands or questions.
+Receive Responses:
 
-Jarvis responds: "Why don't skeletons fight each other? They don't have the guts!"
+Jarvis will process your input and provide a response using Ollama's language model.
+🎤 Customization
+Voice Options: Modify the voices list in the script to change the assistant's voice.
 
-Say: "Jarvis, what's the capital of Japan?"
+Speaking Rate & Volume: Adjust the rate and volume properties of tts_engine for your preference.
 
-Jarvis responds: "The capital of Japan is Tokyo."
+🔍 Debugging Tips
+Check Audio Input: Ensure your microphone is properly connected and configured.
+Model Path: Verify that the Vosk model path in the script matches the downloaded model's location.
+Network Connection: Make sure your device has internet access to communicate with Ollama.
+🤝 Contributing
+We welcome contributions from the community! Feel free to fork this repository, make improvements, and submit pull requests. Let's build an even smarter Jarvis together!
 
-🚨 Troubleshooting 🚨
-Error: Ollama server not running
-Make sure the Ollama API is running locally on port 11434.
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Error: Vosk model not found
-Verify that the Vosk model path is correctly set and that the model is downloaded and extracted properly.
-
-Microphone Issues
-Ensure that your microphone is working and recognized by your system.
-
-📜 License 📜
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-🌟 Contributing 🌟
-Feel free to fork the repository, submit issues, and create pull requests. We welcome contributions to improve Jarvis!
-
-🚀 Enjoy your voice assistant, and may Jarvis always be ready to assist you! 🤖
+🙏 Acknowledgments
+Vosk: For providing a robust open-source speech recognition engine.
+PyAudio: For handling audio input and output.
+Ollama: For offering powerful language generation capabilities.
+pyttsx3: For natural-sounding text-to-speech conversion.
